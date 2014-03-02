@@ -1,0 +1,16 @@
+{
+    "require": {
+       "silex/silex" : "~1.0",
+       "guzzle/guzzle" : "~3.8"
+    },
+    "require-dev": {
+        "phpspec/phpspec" : "dev-master",
+        "ciaranmcnulty/phpspec-typehintedmethods": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "config": {
+        "bin-dir" : "bin"
+    }
+}
