@@ -12,9 +12,11 @@ $app['debug'] = true;
 $gameFinder = new GameFinder(new Client());
 
 $app->post('/game-search', function(Request $request) use ($app, $gameFinder) {
-    $responseText = 'Sorry, I don\'t know that game';
 
-    if ($game = $gameFinder->findByText($request->request->get('text'))) {
+    $responseText = 'Sorry, I don\'t know that game';
+    $gameName = trim(preg_replace('/^boardgame/','', $request->request->get('text')));
+
+    if ($game = $gameFinder->findByText($gameName)) {
         $responseText = $game->getDescription();
     }
 
