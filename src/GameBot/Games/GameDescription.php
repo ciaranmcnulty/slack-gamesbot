@@ -15,7 +15,7 @@ class GameDescription
 
     public function getDescription()
     {
-        return sprintf('%s (%s)', $this->name, $this->url);
+        return sprintf('%s: %s', $this->name, $this->url);
     }
 
 }
