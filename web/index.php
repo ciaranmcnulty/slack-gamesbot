@@ -18,7 +18,7 @@ $app->post('/game-search', function(Request $request) use ($app, $gameFinder) {
         $responseText = $game->getDescription();
     }
 
-    return $app->json(['text' => $responseText]);
+    return $app->json(['username'=>'gamebot','text' => $responseText]);
 });
 
 $app->run();
