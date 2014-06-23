@@ -6,7 +6,7 @@ use GameBot\Games\GameFinder;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
-class Listener implements \SlackBot\SlackBot\Listener
+class WebHookHandler implements \SlackBot\SlackBot\Listener
 {
     private $gameFinder;
 
