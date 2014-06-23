@@ -22,7 +22,7 @@ class FeatureContext implements Context
      */
     public function theUsernameShouldReply($username)
     {
-       if( $this->response->username != $username) {
+       if ($this->response->username != $username) {
            throw new Exception('Username does not match expected value ' . $username);
        }
     }
@@ -33,7 +33,7 @@ class FeatureContext implements Context
     public function theMessageShouldBe($message)
     {
         if( $this->response->text != $message) {
-            throw new Exception('Username does not match expected value ' . $username);
+            throw new Exception('Message does not match expected value ' . $username);
         }
     }
 }
