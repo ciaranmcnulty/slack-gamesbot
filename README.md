@@ -16,6 +16,7 @@ Run a local PHP webserver:
 
     php -S localhost:8000 -t web
 
-Test API via CURL
+Run the tests:
 
-    curl -X POST -d "text=Agricola" http://localhost:8000/game-search
+    bin/phpspec run
+    bin/behat
