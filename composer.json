@@ -4,8 +4,9 @@
        "guzzle/guzzle" : "~3.8"
     },
     "require-dev": {
-        "phpspec/phpspec" : "2.0",
-        "ciaranmcnulty/phpspec-typehintedmethods": "1.0"
+        "phpspec/phpspec" : "~2.0",
+        "ciaranmcnulty/phpspec-typehintedmethods": "~1.0",
+        "behat/behat" : "~3.0"
     },
     "autoload": {
         "psr-0": { "": "src/" }
